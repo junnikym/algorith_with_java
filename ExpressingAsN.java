@@ -14,7 +14,7 @@ class Solution {
 
 	private Integer dfs(
 			final int N,
-			final int number,
+			final Integer number,
 			final int count,
 			final int current
 	) {
@@ -22,7 +22,7 @@ class Solution {
 		if (count > 8)
 			return -1;
 
-		if (current == number)
+		if (number.equals(current))
 			return count;
 
 		Integer min = Integer.MAX_VALUE;
